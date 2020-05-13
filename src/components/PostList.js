@@ -12,7 +12,7 @@ class PostList extends Component {
         },
         date: "03 jun 2019",
         content: "I am Kratos of Sparta...",
-        coments: [
+        comments: [
           {
             id: 1,
             author: {
@@ -32,14 +32,14 @@ class PostList extends Component {
         },
         date: "04 jun 2019",
         content: "I am Demostenes of Athenas...",
-        coments: [
+        comments: [
           {
             id: 1,
             author: {
               name: "Coment2",
               avatar: "url"
             },
-            content: "Conteudo comment dmstn"
+            content: "Conteudo comment dmstn, more content things, how how how how how howhow "
           }
         ]
       }
@@ -50,11 +50,7 @@ class PostList extends Component {
     return (
       <div>
         <ul>
-          <li>
-            {this.state.posts.map(post => <Post key={post.id}
-              data={post} />)}
-              .
-          </li>
+          {this.state.posts.map(post => <Post key={post.id} data={post}/>)}
         </ul>
       </div>
     );

@@ -2,7 +2,7 @@ import React from 'react';
 
 function Header() {
   return (
-    <header className="horizontal">
+    <header className="mainHeader">
       <nav>
         <h3>SocialHeader</h3>
         <div>

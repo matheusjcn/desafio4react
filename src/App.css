@@ -3,29 +3,124 @@
 * {
   margin: 0;
   padding: 0;
+  outline: 0;
+  box-sizing: border-box;
 }
+
+
+body {
+  background-color: rgba(73, 73, 73, 0.288);
+}
+
+
+/*  - - - - - Component Header - - - - - */
 
 header {
   padding: 10px;
   background: #10111d;
   color: white;
   font-size: 20px;
-  display: flex;
 }
 
 header nav {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
-  min-width: 1350px;
+  justify-content: space-between;
 }
 
 header nav div {
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
 }
+
+header nav div p {
+  font-size: 12px;
+}
+
+
 header nav div i {
   margin-left: 10px;
+}
+
+/*  - - - - - Component Post - - - - - */
+
+.Conteiner {
+  max-width: 700px;
+  background: #FFF;
+
+  margin: 20px auto;
+  border-radius: 2px;
+}
+
+.Post { 
+  display: flex;
+}
+
+.Post i {
+  margin: 10px;
+  size: 20px;
+  font-size: 40px;
+}
+
+div.divContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #eee;
+}
+div.divContent h6{
+  margin: 15px ;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+div.people span {
+  font-size: 15px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+}
+
+div.people p {
+  margin-top: 5px;
+  font-size: 10px;
+  font-weight: 100px;
+  color: rgba(1, 1, 1, 0.5);
+}
+
+div.ContentComent {
+  display: flex;
+  margin: 30px ;
+}
+
+div.ContentComent i {
+  margin: 10px;
+  size: 20px;
+  font-size: 40px;
+}
+div.comment {
+  max-width: 500px;
+  margin-right: 10px auto;
+  background: rgba(41, 65, 97, 0.5);
+  display: flex;
+  flex-direction: row;
+  border-radius: 2px;
+  margin-bottom: 5px;
+
+}
+
+div.comment span{
+  font-weight: bolder;
+  margin-right: 10px ;
+  margin-left: 5px; 
+  margin-top: 2px;
+}
+
+div.comment p{
+  margin-left: 5px; 
+  margin-right: 10px;
+  margin-top: 2px;
 }
